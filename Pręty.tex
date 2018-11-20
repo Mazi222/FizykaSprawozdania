@@ -1,0 +1,409 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{changepage}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{caption}
+
+\captionsetup[figure]{name=}
+
+
+\title{Sprawozdanie}
+\begin{document}
+	
+	\begin{center}
+		\bgroup
+		\def\arraystretch{1.5}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			EAIiIB & \multicolumn{2}{|c|}{\begin{tabular}{@{}c@{}}Autor 1: Rafał Mazur \\Autor 2: Jakub Ficoń\end{tabular}} & Rok II & Grupa 5 & Zespół 3 \\
+			\hline
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: \\ Fale podłużne w ciałach stałych \end{tabular}} & 
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Numer ćwiczenia: \\ 29 \end{tabular}} \\
+			\hline
+			Data wykonania & Data oddania & Zwrot do poprawki & Data oddania & Data zaliczenia & Ocena \\[8ex]
+			\hline
+		\end{tabular}
+		\egroup
+	\end{center}  
+	
+	%WSTEP
+	\section{Cel ćwiczenia}
+	Wyznaczenie modułu Younga dla różnych materiałów na podstawie pomiaru prędkości rozchodzenia się fali dźwiękowej w pręcie.
+	
+	\section{Wstęp teoretyczny}
+	    W załącznikach na końcu sprawozdania
+	
+	\section{Aparatura pomiarowa}
+	    \begin{enumerate}
+	        \item Waga elektroniczna o dokładności 1g
+	        \item Zestaw 6 próbek służących do zmierzenia gęstości
+	        \item Suwmiarka o dokładności do 0.05mm (0.00005m)
+	        \item Miarka w rolce o podziałce 1mm
+	        \item Zestaw 6 prętów o różnych kształtach
+	        \item Młotek
+	        \item Komputer stacjonarny z mikrofonem
+	        \item Program Zelscope
+	    \end{enumerate}
+	
+	\section{Wykonanie ćwiczenia}
+	\begin{enumerate}
+		\item Pomiar wymiarów próbek materiałów z których wykonane są pręty
+		\item Zważenie próbek materiałów i na podstawie wymiarów i wagi wyliczenie gęstości
+		\item Zmierzenie częstotliwości drgań harmonicznych dla prętów, przy pomocy programu Zelscope i mikrofonu ustawionego przy pręcie przez uderzeniu w pręt młotkiem.
+		\item Powtórzenie powyższej czynności dla wszystkich prętów
+	\end{enumerate}
+	
+	\pagebreak
+	%KONIEC WSTEPU	
+	\section{Wyniki pomiarów}
+	\begin{figure}[!ht]
+		\begin{adjustwidth}{-1cm}{}
+			\def\arraystretch{1.3}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				\parbox[c]{2cm}{\raggedright Materiał} & \begin{tabular}{c} Masa pręta\\ \mbox{[kg]}\end{tabular} & \begin{tabular}{c} Długość próbki  \\ \mbox{[cm]}  \end{tabular}  & 
+				\begin{tabular}{c} Pole podstawy\\ \mbox{[$cm^2$]}
+				\end{tabular}& 
+				\begin{tabular}{c}	Objętość\\ \mbox{[$cm^3$]}  \end{tabular} & 
+				\begin{tabular}{c}	Gęstość \\ $ \left [\frac{kg}{m^3} \right ] $ \end{tabular}  \\
+				\hline
+				Aluminium (1)& 0.024 & 44 & 0.196 & 8.639  & 2777.97\\
+				\hline
+				Aluminium (2) & 0.030 & 55.7 & 0.196 & 10.937  & 2743.05\\
+				\hline
+				Mosiądz (1) & 0.074 & 31.3 & 0.154  & 4.805 & 7492.50\\
+				\hline
+				Mosiądz (2)& 0.174 & 22.2 & 0.273  & 8.557 & 8647.53\\
+				\hline
+				Stal & 0.036 & 0.311  & 0.935 & 20.757 & 8382.71\\
+				\hline
+				Miedź & 0.066 & 0.440  & 0.189 & 7.279 & 9067.20\\
+				\hline
+			\end{tabular}
+		\end{adjustwidth}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\begin{adjustwidth}{-1cm}{}
+			\def\arraystretch{1.3}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\cline{1-2}
+				\multicolumn{2}{|l|}{\begin{tabular}{c} Aluminium (koło) $l = 1 [m]$\end{tabular}} & \multicolumn{2}{c}{}\\
+				\hline
+				\begin{tabular}{c} Harmoniczna  \end{tabular} & \begin{tabular}{c} Częstotliwość $f$ \\ \mbox{[HZ]}  \end{tabular}  & 
+				\begin{tabular}{c}	Długość fali $ \lambda$ \\ \mbox{[m]}  \end{tabular} &
+				\begin{tabular}{c} Prędkość fali $\upsilon$ \\ \mbox{[m/s]}  \end{tabular}  \\ 
+				\hline
+				1 & 93.75 & 2 & 187.50 \\[2ex]
+				\hline
+				2  & 187.50 & 1 & 187.50 \\[2ex]
+				\hline
+				3 & 281.25  & 0.67 & 187.50 \\[2ex]
+				\hline
+				4 & 375.00 & 0,50 & 187.50 \\[2ex]
+				\hline
+				5 & 468.75 & 0,40 & 187.50 \\[2ex]
+				\hline
+				6 & 562.50 & 0,33 & 187.50 \\[2ex]
+				\hline
+				
+		\end{tabular}
+			$$v=187.50 \left [\frac{m}{s} \right ] $$
+			$$E=0.0242 \left [GPa \right ] $$
+		\end{adjustwidth}
+	\end{figure}
+	
+		\begin{figure}[!htb]
+		\begin{adjustwidth}{-1cm}{}
+			\def\arraystretch{1.3}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\cline{1-2}
+				\multicolumn{2}{|l|}{\begin{tabular}{c} Mosiądz  (koło) $l = 1 [m]$\end{tabular}} & \multicolumn{2}{c}{}\\
+				\hline
+				\begin{tabular}{c} Harmoniczna  \end{tabular} & \begin{tabular}{c} Częstotliwość $f$ \\ \mbox{[HZ]}  \end{tabular}  & 
+				\begin{tabular}{c}	Długość fali $ \lambda$ \\ \mbox{[m]}  \end{tabular} &
+				\begin{tabular}{c} Prędkość fali $\upsilon$ \\ \mbox{[m/s]}  \end{tabular}  \\ 
+				\hline
+				1 & 93.75 & 2 & 187.50 \\[2ex]
+				\hline
+				2  & 187.50 & 1 & 187.50 \\[2ex]
+				\hline
+				3 & 281.25  & 0.67 & 187.50 \\[2ex]
+				\hline
+				4 & 375.00 & 0,50 & 187.50 \\[2ex]
+				\hline
+				5 & 468.75 & 0,40 & 187.50 \\[2ex]
+				\hline
+				6 & 562.50 & 0,33 & 187.50 \\[2ex]
+				\hline
+				
+		\end{tabular}
+			$$v=187.50 \left [\frac{m}{s} \right ] $$
+			$$E=0.299 \left [GPa \right ] $$
+		\end{adjustwidth}
+	\end{figure}
+	
+			\begin{figure}[!htb]
+		\begin{adjustwidth}{-1cm}{}
+			\def\arraystretch{1.3}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\cline{1-2}
+				\multicolumn{2}{|l|}{\begin{tabular}{c} Mosiądz (okrąg) $l = 1 [m]$\end{tabular}} & \multicolumn{2}{c}{}\\
+				\hline
+				\begin{tabular}{c} Harmoniczna  \end{tabular} & \begin{tabular}{c} Częstotliwość $f$ \\ \mbox{[HZ]}  \end{tabular}  & 
+				\begin{tabular}{c}	Długość fali $ \lambda$ \\ \mbox{[m]}  \end{tabular} &
+				\begin{tabular}{c} Prędkość fali $\upsilon$ \\ \mbox{[m/s]}  \end{tabular}  \\ 
+				\hline
+				1 & 93.75 & 2 & 187.50 \\[2ex]
+				\hline
+				2  & 187.50 & 1 & 187.50 \\[2ex]
+				\hline
+				3 & 281.25  & 0.67 & 187.50 \\[2ex]
+				\hline
+				4 & 375.00 & 0,50 & 187.50 \\[2ex]
+				\hline
+				5 & 468.75 & 0,40 & 187.50 \\[2ex]
+				\hline
+				6 & 562.50 & 0,33 & 187.50 \\[2ex]
+				\hline
+				
+		\end{tabular}
+			$$v=187.50 \left [\frac{m}{s} \right ] $$
+			$$E=0.299 \left [GPa \right ] $$
+		\end{adjustwidth}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\begin{adjustwidth}{-1cm}{}
+			\def\arraystretch{1.3}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\cline{1-2}
+				\multicolumn{2}{|l|}{\begin{tabular}{c} Stal  (koło)  $l = 1,8 [m]$\end{tabular}} & \multicolumn{2}{c}{}\\
+				\hline
+				\begin{tabular}{c} Harmoniczna  \end{tabular} & \begin{tabular}{c} Częstotliwość $f$ \\ \mbox{[HZ]}  \end{tabular}  & 
+				\begin{tabular}{c}	Długość fali $ \lambda$ \\ \mbox{[m]}  \end{tabular} &
+				\begin{tabular}{c} Prędkość fali $\upsilon$ \\ \mbox{[m/s]}  \end{tabular}  \\ 
+				\hline
+				1 & 93.75 & 3,6 & 337.50 \\[2ex]
+				\hline
+				2  & 187.50 & 1,8 & 337.50 \\[2ex]
+				\hline
+				3 & 281.25  & 1,2 & 337.50 \\[2ex]
+				\hline
+				4 & 375.00 & 0,9 & 337.50 \\[2ex]
+				\hline
+				5 & 468.75 & 0,72 & 337.50 \\[2ex]
+				\hline
+				6 & 562.50 & 0,6 & 337.50 \\[2ex]
+				\hline
+				
+			\end{tabular}
+		\end{adjustwidth}
+			$$v=337.50 \left [\frac{m}{s} \right ] $$ 
+			$$E=0.853 \left [GPa \right ] $$
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\begin{adjustwidth}{-1cm}{}
+			\def\arraystretch{1.3}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\cline{1-2}
+				\multicolumn{2}{|l|}{\begin{tabular}{c} Stal (prostokąt) $l = 1,8 [m]$\end{tabular}} & \multicolumn{2}{c}{}\\
+				\hline
+				\begin{tabular}{c} Harmoniczna  \end{tabular} & \begin{tabular}{c} Częstotliwość $f$ \\ \mbox{[HZ]}  \end{tabular}  & 
+				\begin{tabular}{c}	Długość fali $ \lambda$ \\ \mbox{[m]}  \end{tabular} &
+				\begin{tabular}{c} Prędkość fali $\upsilon$ \\ \mbox{[m/s]}  \end{tabular}  \\ 
+				\hline
+				1 & 93.75 & 3,6 & 337.50 \\[2ex]
+				\hline
+				2  & 187.50 & 1,8 & 337.50 \\[2ex]
+				\hline
+				3 & 281.25  & 1,2 & 337.50 \\[2ex]
+				\hline
+				4 & 375.00 & 0,9 & 337.50 \\[2ex]
+				\hline
+				5 & 468.75 & 0,72 & 337.50 \\[2ex]
+				\hline
+				6 & 562.50 & 0,6 & 337.50 \\[2ex]
+				\hline
+				
+			\end{tabular}
+		\end{adjustwidth}
+			$$v=337.50 \left [\frac{m}{s} \right ] $$ 
+			$$E=0.853 \left [GPa \right ] $$
+	\end{figure}
+	
+		\begin{figure}[!htb]
+		\begin{adjustwidth}{-1cm}{}
+			\def\arraystretch{1.3}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\cline{1-2}
+				\multicolumn{2}{|l|}{\begin{tabular}{c} Miedź  (koło) $l = 1,8 [m]$\end{tabular}} & \multicolumn{2}{c}{}\\
+				\hline
+				\begin{tabular}{c} Harmoniczna  \end{tabular} & \begin{tabular}{c} Częstotliwość $f$ \\ \mbox{[HZ]}  \end{tabular}  & 
+				\begin{tabular}{c}	Długość fali $ \lambda$ \\ \mbox{[m]}  \end{tabular} &
+				\begin{tabular}{c} Prędkość fali $\upsilon$ \\ \mbox{[m/s]}  \end{tabular}  \\ 
+				\hline
+				1 & 93.75 & 3,6 & 337.50 \\[2ex]
+				\hline
+				2  & 187.50 & 1,8 & 337.50 \\[2ex]
+				\hline
+				3 & 281.25  & 1,2 & 337.50 \\[2ex]
+				\hline
+				4 & 375.00 & 0,9 & 337.50 \\[2ex]
+				\hline
+				5 & 468.75 & 0,72 & 337.50 \\[2ex]
+				\hline
+				6 & 562.50 & 0,6 & 337.50 \\[2ex]
+				\hline
+				
+			\end{tabular}
+		\end{adjustwidth}
+			$$v=337.50 \left [\frac{m}{s} \right ] $$ 
+			$$E=1.033 \left [GPa \right ] $$
+	\end{figure}
+	
+	\clearpage
+	\section{Opracowanie wyników}
+	Błędy pomiarów:\\
+	Długości pręta: $u(l)=0.001m$\\
+	Promienia lub boku podstawy: $u(r)=0.00005m$\\
+	Masy próbki: $u(m)=0.001kg$\\
+	Częstotliwości: $u(f)=0.25Hz$\\
+	
+	Niepewność gęstości:
+	\[
+	u(\rho)=\sqrt{\bigg(\frac{\partial \rho}{\partial m}u(m)\bigg)^2+\bigg(\frac{\partial \rho}{\partial l}u(l)\bigg)^2+\bigg(\frac{\partial \rho}{\partial r}u(r)\bigg)^2} = \sqrt{\bigg(\frac{1}{l\pi r^2}u(m)\bigg)^2+\bigg(\frac{-m}{l^2 \pi r^2}u(l)\bigg)^2+\bigg(\frac{-2m}{l\pi r^3}u(r)\bigg)^2}
+	\]
+	
+	Niepewność długości fali:
+	$$ u(\lambda)=\sqrt{\bigg(\frac{2}{n}u(l)\bigg)^2}$$
+	
+	Niepewność prędkości fali:
+	$$ u(v)=\sqrt{\bigg(\frac{\partial v}{\partial f}u(f)\bigg)^2+\bigg(\frac{\partial v}{\partial \lambda}u(\lambda)\bigg)^2}=\sqrt{\bigg(\lambda u(f)\bigg)^2+\bigg(f u(\lambda)\bigg)^2}$$
+	
+	Niepewność modułu Younga:
+	$$ u(E)=\sqrt{\bigg(\frac{\partial E}{\partial \rho}u(\rho)\bigg)^2+\bigg(\frac{\partial E}{\partial v}u(v)\bigg)^2} =
+	\sqrt{\bigg(v^2 u(\rho)\bigg)^2+\bigg(2 \rho v  \cdot{}u(v)\bigg)^2}$$
+	
+\begin{figure}[!htb]
+	\caption{Tabela niepewności dla gęstości}
+
+		\def\arraystretch{1.3}
+		\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	\begin{tabular}{c} Materiał  \end{tabular} & \begin{tabular}{c} Niepewność \\ złożona \\gęstości\end{tabular}  & 
+	\begin{tabular}{c} Niepewność\\ rozszerzona\\ $k=2 $    \end{tabular}
+	&
+	\begin{tabular}{c} Gęstość\\ obliczona  \\ $\left [ \frac{kg}{m^3} \right ] $\end{tabular}
+	&
+	\begin{tabular}{c}	Gęstość \\tabelaryczna\\ $\left [ \frac{kg}{m^3} \right ] $ \end{tabular} &
+	\begin{tabular}{c} Czy w przedziale \\ niepewności  \end{tabular}  \\ 
+	\hline
+	Aluminium (1)   & 160.58    & 321.16    & 2777.97  & 2720 & TAK \\[0.3ex]
+	\hline
+	Aluminium (2)   & 142.92    & 185.84    & 2743.05  & 2720 & TAK \\[0.3ex]
+	\hline
+	Mosiądz (1)     & 47.39    & 94.78   & 8647.53  & 8400–8700 & TAK \\[0.3ex]
+	\hline
+	Mosiądz (2)     & 78.47     & 156.94     & 8382.71  & 8400–8700 & TAK \\[0.3ex]
+	\hline
+	Stal            & 108.62    & 217.24    & 7492.50  & 7500–7900 & TAK\\[0.3ex]
+	\hline
+	Miedź           & 126.91    & 253.82    & 9067.20  & 8933 & TAK\\[0.3ex]
+	\hline
+	
+\end{tabular}
+\end{figure}
+
+\begin{figure}[!htb]
+	    \caption{Tabela niepewności dla prędkości dźwięku}
+		\def\arraystretch{1.3}
+		\centering
+    \begin{tabular}{|c|c|c|c|c|}
+    
+    	\hline
+    	\begin{tabular}{c} Materiał  \end{tabular} & \begin{tabular}{c} Niepewność złożona \\prędkości dźwięku\end{tabular}  & 
+    	\begin{tabular}{c} Niepewność\\rozszerzona $k=2$\end{tabular}
+    	&
+    	\begin{tabular}{c} Prędkość \\obliczona  \\ $\left [ \frac{m}{s} \right ] $\end{tabular}
+    	&
+    	\begin{tabular}{c}	Prędkość \\tabelaryczna\\ $\left [ \frac{m}{s} \right ] $ \end{tabular}\\ 
+    	\hline
+    	Aluminium 1m  (koło)         & 50     & 100    & 187.50  & 6300 \\[0.3ex]
+    	\hline
+    	Mosiądz 1m  (koło)           & 50     & 100    & 187.50  & 3500 \\[0.3ex]
+    	\hline
+    	Mosiądz 1m (okrąg)    & 50     & 100    & 187.50  & 3500 \\[0.3ex]
+    	\hline
+    	Stal 1.8m (koło)              & 90     & 180    & 337.50  & 5100-6000 \\[0.3ex]
+    	\hline
+    	Stal 1.8m (prostokąt)         & 90     & 180    & 337.50  & 5100-6000 \\[0.3ex]
+    	\hline
+    	Miedź 1.8m (okrąg)              & 90     & 180    & 337.50  & 3900 \\[0.3ex]
+    	\hline
+    	
+    \end{tabular}
+\end{figure}
+	
+\begin{figure}[!htb]
+        \caption{Tabela niepewności dla modułu Younga}
+
+		\def\arraystretch{1.3}
+		\centering
+    \begin{tabular}{|c|c|c|c|c|}
+    	\hline
+    	\begin{tabular}{c} Materiał  \end{tabular} & \begin{tabular}{c} Niepewność złożona \\modułu Younga\end{tabular}  & 
+    	\begin{tabular}{c} Niepewność\\rozszerzona\\$k=2$\end{tabular}
+    	&
+    	\begin{tabular}{c} Moduł\\ obliczony  \\ $[ GPa ] $\end{tabular}
+    	&
+    	\begin{tabular}{c}	Moduł Younga \\wartość tablicowa\\ $[ GPa ] $ \end{tabular}\\ 
+    	\hline
+    	Aluminium 1m  (koło)            & $0.0523\cdot 10^9$    & 100    & 0.0242  & 69 \\[0.3ex]
+    	\hline
+    	Mosiądz 1m  (koło)              & $0.1597\cdot 10^9$     & 100    & 0.299   & 103-124 \\[0.3ex]
+    	\hline
+    	Mosiądz 1m (okrąg)              & $0.1597\cdot 10^9$    & 100    & 0.299   & 103-124 \\[0.3ex]
+    	\hline
+    	Stal 1.8m (koło)                & $0.4553\cdot 10^9$     & 180    & 0.853  & 205-210 \\[0.3ex]
+    	\hline
+    	Stal 1.8m (prostokąt)           & $0.4553\cdot 10^9$     & 180    & 0.853  & 205-210 \\[0.3ex]
+    	\hline
+    	Miedź 1.8m (okrąg)              & $0.5510\cdot 10^9$     & 180    & 1.033  & 110-135 \\[0.3ex]
+    	\hline
+    	
+    \end{tabular}
+\end{figure}
+\pagebreak
+	\section{Wnioski}
+	
+    Wartości, gęstości dla różnych materiałów są zgodne z wartościami tabelarycznymi, dla obliczonej niepewności rozszerzonej. Świadczy to o prawidłowym zmierzeniu przekrojów, długości, oraz wag próbek materiałów.
+    
+    
+    Wyniki pomiaru częstotliwości przy użyciu programu Zelscope są identyczne co świadczy o nieprawidłowym działania bądź niewłaściwym użycia oprogramowania i/ lub aparatury pomiarowych.
+    
+    
+    Błędy pomiaru częstotliwości przeniosły się dalej co spowodowało zakłamanie pozostałych wyników
+
+	
+\end{document}

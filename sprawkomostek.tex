@@ -1,0 +1,263 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{changepage}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{caption}
+
+
+\title{Sprawozdanie}
+\begin{document}
+	
+	\begin{center}
+		\bgroup
+		\def\arraystretch{1.5}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			EAIiIB & \multicolumn{2}{|c|}{\begin{tabular}{@{}c@{}}Autor 1: Rafał Mazur \\Autor 2: Jakub Ficoń\end{tabular}} & Rok II & Grupa 5 & Zespół 3 \\
+			\hline
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: \\ Mostek Wheatstone'a \end{tabular}} & 
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Numer ćwiczenia: \\ 32 \end{tabular}} \\
+			\hline
+			Data wykonania & Data oddania & Zwrot do poprawki & Data oddania & Data zaliczenia & Ocena \\[8ex]
+			\hline
+		\end{tabular}
+		\egroup
+	\end{center}  
+	
+	%WSTEP
+	\section{Cel ćwiczenia}
+	Praktyczne zastosowanie praw Kirchhoffa i sprawdzenie zależności określających opór zastępczy
+dla połączeń szeregowych, równoległych oraz mieszanych.
+	
+	\section{Wstęp teoretyczny}
+	    W załącznikach na końcu sprawozdania
+	
+	\section{Aparatura pomiarowa}
+	    \begin{enumerate}
+	        \item Galwanometr
+	        \item Zasilacz stabilizoway $3A/30V$
+	        \item Opornica dekadowa
+	        \item Zestaw oporników wmontowanych na płytce
+	        \item Listwa z drutem oporowym, zaopatrzona w przedziałkę milimetrową i kontakt ślizgowy
+	        \item Zestaw kabli
+	    \end{enumerate}
+	
+	\section{Wykonanie ćwiczenia}
+    	\begin{enumerate}
+    		\item Zbudowanie układu
+    		\item Odpowiednie połączenie oporników wmontowanych na płytce
+    		\item Wykonanie pomiarów dla różnych konfiguracji oporników (pojedynczo, szeregowo, równolegle)
+    		\item Obliczenie oporu ze wzoru:
+    		\[
+    		    R_x=R_w\frac{a}{l_0-a}
+    		\]
+    	\end{enumerate}
+	\pagebreak
+	\section{Opracowanie punktów 1,2,3}
+	\begin{table}[!htb]
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{11}{|c|}{Opornik $R_1$} \\ \hline
+         Opór wzorcowy $\left[\Omega\right]$ & 5  & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 \\ \hline
+         $a\left[mm\right]$& 691 & 548 & 360 & 281 & 221 & 167 & 158 & 137 & 121 & 111 \\ \hline
+        $R_{x_1} \left[\Omega\right]$ & 11.18 & 12.12 & 11.25 & 11.72 & 11.35 & 11.50 & 11.26 & 11.11 & 11.01 & 11.24 \\ \hline
+        \multicolumn{11}{|c|}{$\overline{R}=11.37\left[\Omega\right]$ \-\-\-\-  $u(R)=0.11\left[\Omega\right]$} \\ \hline
+        \end{tabular*}
+    \end{table}
+    
+    	\begin{table}[!htb]
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{11}{|c|}{Opornik $R_2$} \\ \hline
+         Opór wzorcowy $\left[\Omega\right]$ & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100\\ \hline
+         $a\left[mm\right]$& 831 & 698 & 600 & 527 & 468 & 422 & 383 & 351 & 326 & 302 \\ \hline
+         $R_{x_2} \left[\Omega\right]$ & 49.17 & 46.23 & 45.00 & 44.57 & 43.98 & 43.81 & 43.45 & 43.27 & 43.53 & 43.27 \\ \hline
+         \multicolumn{11}{|c|}{$\overline{R}=44.63\left[\Omega\right]$ \-\-\-\-  $u(R)=0.17\left[\Omega\right]$} \\ \hline
+
+        \end{tabular*}
+    \end{table}
+    
+	\begin{table}[!htb]
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{11}{|c|}{Opornik $R_3$} \\ \hline
+         Opór wzorcowy $\left[\Omega\right]$ & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 & 110\\ \hline
+         $a\left[mm\right]$& 832 & 761 & 696 & 644 & 602 & 561 & 529 & 499 & 472 & 446 \\ \hline
+         $R_{x_3} \left[\Omega\right]$ & 99.05 & 95.52 & 91.58 & 90.45 & 90.75 & 89.45 & 89.85 & 89.64 & 89.39 & 88.56 \\ \hline
+        \multicolumn{11}{|c|}{$\overline{R}=91.42\left[\Omega\right]$ \-\-\-\-  $u(R)=1.04\left[\Omega\right]$} \\ \hline
+
+        \end{tabular*}
+    \end{table}
+    
+	\begin{table}[!htb]
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{11}{|c|}{Oporniki $R_1$ i $R_2$ szeregowo} \\ \hline
+         Opór wzorcowy $\left[\Omega\right]$ & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 & 110\\ \hline
+         $a\left[mm\right]$& 752 & 663 & 592 & 537 & 488 & 443 & 414 & 386 & 359 & 338 \\ \hline
+         $R_{x_{1,2}} \left[\Omega\right]$ &60.65 & 59.02 & 58.04 & 57.99 & 57.19 & 55.67 & 56.52 & 56.58 & 56.01 & 56.16 \\ \hline
+        \multicolumn{11}{|c|}{$\overline{R}=57.38\left[\Omega\right]$ \-\-\-\-  $u(R)=0.49\left[\Omega\right]$} \\ \hline
+        \end{tabular*}
+    \end{table}
+    
+	\begin{table}[!htb]
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{11}{|c|}{Oporniki $R_1$ i $R_2$ równolegle} \\ \hline
+         Opór wzorcowy $\left[\Omega\right]$ & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50\\ \hline
+         $a\left[mm\right]$& 634 & 487 & 380 & 317 & 269 & 232 & 204 & 184 & 160 & 149 \\ \hline
+         $R_{x_{1,2}} \left[\Omega\right]$ &8.66 & 9.49 & 9.19 & 9.28 & 9.20 & 9.06 & 8.97 & 9.02 & 8.57 & 8.75 \\ \hline
+        \multicolumn{11}{|c|}{$\overline{R}=9.02\left[\Omega\right]$ \-\-\-\-  $u(R)=0.11\left[\Omega\right]$} \\ \hline
+        \end{tabular*}
+    \end{table}
+    
+	\begin{table}[!htb]
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |p{2cm}|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{11}{|c|}{Oporniki $R_1$ i $R_2$ równolegle a $R_3$ szeregowo do nich} \\ \hline
+         Opór \hfil\break wzorcowy$\left[\Omega\right]$ &  50 & 100 & 150 & 200 & 250 & 300 & 350 & 400 & 450 & 500\\ \hline
+         $a\left[mm\right]$&  678 & 499 & 404 & 338 & 286 & 253 & 229 & 206 & 186 & 171 \\ \hline
+         $R_{x_{1,2,3}} \left[\Omega\right]$ &  105.28 & 99.60 & 101.68 & 102.11 & 100.14 & 101.61 & 103.96 & 103.78 & 102.83 & 103.14 \\ \hline
+        \multicolumn{11}{|c|}{$\overline{R}=102.41\left[\Omega\right]$ \-\-\-\-  $u(R)=0.12\left[\Omega\right]$} \\ \hline
+        \end{tabular*}
+    \end{table}
+	
+	\pagebreak
+	
+	\section{Opracowanie punktów 4,5,6}
+%	\begin{flushleft}
+	\subsection{Połączenie szeregowe:} 
+	\[
+	    R_s=R_1+R_2
+	\]
+	
+	\[
+	    u(R_z)=\sqrt{\left(\frac{\partial{}R_z}{\partial{}R_1}u(R_1)\right)^2 + \left(\frac{\partial{}R_z}{\partial{}R_2}u(R_2)\right)^2} =
+	    \sqrt{u(R_1)^2 + u(R_2)^2}
+	\]
+	
+	\begin{table}[!htb]
+        \begin{tabular}{|c|c|c|}
+        \hline
+                            &   Opór zmierzony   $\left[\Omega\right]$    & Opór wyliczony  $\left[\Omega\right]$   \\ \hline
+         Średnia wartość   &   57.38               & 55.43             \\ \hline
+         Niepewność         &   0.49                    & 0.20          \\ \hline
+        \end{tabular}
+    \end{table}
+	
+	\subsection{Połączenie równoległe:}
+	\[
+	    \frac{1}{R_z}=\frac{1}{R_1}+\frac{1}{R_2} \Rightarrow R_z = \frac{R_1\cdot R_2}{R_1+R_2}
+	\]
+	
+	\[
+	    u(R_z)=\sqrt{\left(\frac{\partial{}R_z}{\partial{}R_1}u(R_1)\right)^2 + \left(\frac{\partial{}R_z}{\partial{}R_2}u(R_2)\right)^2} = \sqrt{\left(\frac{R_2^2}{R_1^2+R_2^2}u(R_1)\right)^2+\left(\frac{R_1^2}{R_1^2+R_2^2}u(R_2)\right)^2}
+	\]
+	
+	\begin{table}[!htb]
+        \begin{tabular}{|c|c|c|}
+        \hline
+                            &   Opór zmierzony    $\left[\Omega\right]$   & Opór wyliczony   $\left[\Omega\right]$  \\ \hline
+         Średnia wartość    &   9.02               & 9.06             \\ \hline
+         Niepewność         &   0.11                & 0.16              \\ \hline
+        \end{tabular}
+    \end{table}
+    
+	\subsection{Połączenie mieszane:}
+	
+	\[
+	    R_z=\frac{R_1\cdot R_2}{R_1+R_2}+R_3
+	\]
+    \begin{equation}
+    \nonumber
+    \begin{split}
+	    u(R_z)= & \sqrt{\left(\frac{\partial{}R_z}{\partial{}R_1}u(R_1)\right)^2 + \left(\frac{\partial{}R_z}{\partial{}R_2}u(R_2)\right)^2+ \left(\frac{\partial{}R_z}{\partial{}R_3}u(R_3)\right)^2} = \\ & = \sqrt{\left(\frac{R_2^2}{R_1^2+R_2^2}u(R_1)\right)^2+  \left(\frac{R_1^2}{R_1^2+R_2^2}u(R_2)\right)^2 +\left( u(R_3)\right)^2}
+    \end{split}
+    \end{equation}
+    
+	\begin{table}[!htb]
+        \begin{tabular}{|c|c|c|}
+        \hline
+                                &   Opór zmierzony   $\left[\Omega\right]$   & Opór wyliczony  $\left[\Omega\right]$  \\ \hline
+         Średnia wartość  
+         $\left[\Omega\right]$  &   102.41              & 100.49            \\ \hline
+         Niepewność             &   0.12                & 1.06                  \\ \hline
+        \end{tabular}
+    \end{table}
+    \pagebreak
+    \section{Porównanie oporów zmierzonych z oporami obliczonymi}
+        Sprawdzenie czy średnie wartości oporu zmierzonego i wyliczonego są sobie równe w granicach błędu (Teoria pkt.9):
+        
+        \subsection{Połączenie szeregowe}
+        
+        \[
+            \left|R_{wyznaczone}-R_{obliczone}\right| =\left| 57.38 \left[\Omega\right] - 56.00 \left[\Omega\right]\right| = 1.38 \left[\Omega\right]
+        \]
+        \[
+            u(R_{wyznaczone}-R_{obliczone})= 2\cdot\sqrt{u(R_{wyznaczone})^2+u(R_{obliczone})^2} = 1.07 \left[\Omega\right]
+        \]
+        \[
+            \left|R_{wyznaczone}-R_{obliczone}\right| > u(R_{wyznaczone}-R_{obliczone})
+        \]
+        
+        Wyznaczona wartość oporu zastępczego nie jest zgodna z wartością obliczoną.
+        
+        \subsection{Połączenie równoległe}
+        
+        \[
+            \left|R_{wyznaczone}-R_{obliczone}\right| = \left|9.02 \left[\Omega\right] - 9.06 \left[\Omega\right]\right| = 0.04 \left[\Omega\right]
+        \]
+        \[
+            u(R_{wyznaczone}-R_{obliczone})= 2\cdot\sqrt{u(R_{wyznaczone})^2+u(R_{obliczone})^2} = 0.39 \left[\Omega\right]
+        \]
+        \[
+            \left|R_{wyznaczone}-R_{obliczone}\right| < u(R_{wyznaczone}-R_{obliczone})
+        \]
+        Wyznaczona wartość oporu zastępczego jest w granicach błędu równa wartości obliczonej.
+
+        \subsection{Połączenie mieszane}
+        
+        \[
+            \left|R_{wyznaczone}-R_{obliczone}\right| = \left|102.41 \left[\Omega\right] - 100.49 \left[\Omega\right]\right| = 1.92 \left[\Omega\right]
+        \]
+        \[
+            u(R_{wyznaczone}-R_{obliczone})= 2\cdot\sqrt{u(R_{wyznaczone})^2+u(R_{obliczone})^2} = 2.13 \left[\Omega\right]
+        \]
+        \[
+            \left|R_{wyznaczone}-R_{obliczone}\right| < u(R_{wyznaczone}-R_{obliczone})
+        \]
+                Wyznaczona wartość oporu zastępczego jest w granicach błędu równa wartości obliczonej.
+    
+    \section{Wnioski}
+    
+    Korzystając z mostka Wheatstone'a wyznaczykiśmy nieznane opory oporników oraz ich opory przy połączeniu szeregowym, równoległym i mieszanym. Niepewności otrzymane przy większości pomiarów są wystarczająco małe w stosunku do oporu aby uznać je za precyzyjne. Wyznaczone i obliczone wartości oporu zastępczego w połączeniu równoległym i mieszanym są sobie równe w granicach błędu, jednak dla połączenia szeregowego wartości nie są sobie równe w granicach błędu lecz są zadowalająco do siebie zbliżone. Wystąpienie błędu dla połączenia szeregowego może być spowodowane tym, że drut oporowy nie był idealnie prosty co przy niewielkim oporze opornika $R_1$ mogło spowodować błąd większy niż obliczona niepewność, jednak wartości oporu nie różniły się od siebie o zbyt wiele. Wynika z tego, że mostek Wheatstone'a jest dobrym narzędziem do mierzenia oporu, gdyż jedyny błąd jaki się pojawił był spowodowany nieidealnym drutem.
+    
+    \subsection{Wzory zastosowane w punkcie 6}
+    Pierwsze dwa oporniki były podłączone równolegle więc stosuję wzór:
+	\[
+	    \frac{1}{R_{z1}}=\frac{1}{R_1}+\frac{1}{R_2}
+	\]
+	z którego otrzymuję, że:
+	\[
+	    R_{z1} = \frac{R_1\cdot R_2}{R_1+R_2}
+	\]
+    Zastępuję więc oporniki $R_1$ i $R_2$ opornikiem o oporze $R_{z1}$ który jest szeregowo połączony z $R_3$ z czego wynika że opór zastępczy układu wyniesie:
+	\[
+	    R_z=\frac{R_1\cdot R_2}{R_1+R_2}+R_3
+	\]
+%	\end{flushleft}
+	%KONIEC WSTEPU	
+
+	
+\end{document}

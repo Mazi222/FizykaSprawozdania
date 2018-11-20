@@ -1,0 +1,175 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{changepage}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{caption}
+
+
+\title{Sprawozdanie}
+
+\begin{document}
+	\begin{center}
+		\bgroup
+		\def\arraystretch{1.5}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			EAIiIB & \multicolumn{2}{|c|}{\begin{tabular}{@{}c@{}}Autor 1: Rafał Mazur \\Autor 2: Jakub Ficoń\end{tabular}} & Rok II & Grupa 5 & Zespół 3 \\
+			\hline
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: \\ Współczynnik załamania światła dla ciał stałych \end{tabular}} & 
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Numer ćwiczenia: \\ 51 \end{tabular}} \\
+			\hline
+			Data wykonania & Data oddania & Zwrot do poprawki & Data oddania & Data zaliczenia & Ocena \\[8ex]
+			\hline
+		\end{tabular}
+		\egroup
+	\end{center}  
+	
+	\section{Cel ćwiczenia}
+	Wyznaczanie współczynnika załamania światła dla płytki szklanej i pleksiglasowej metodą pomiaru grubości pozornej płytki przy pomocy mikroskopu.
+	
+	\section{Wstęp teoretyczny}
+	    W załącznikach na końcu sprawozdania
+	
+	\setcounter{section}{3}
+	\newpage
+	\setcounter{page}{5}
+	\section{Opracowanie wyników pomiarów}
+
+	\noindent Wzór na współczynnik załamania
+	\begin{equation}
+	    n=\frac{d}{h}
+	\end{equation}
+
+	\noindent Gdzie: n-współczynnik załamania, d- grubość rzeczywista, h- grubość pozorna.
+	
+	\subsection{Płytka z pleksiglasu:}
+	Grubość rzeczywista d=3.84[mm]
+	
+	\noindent Niepewność u(d)=0.01[mm]
+	
+	\noindent Średnia grubość pozorna h=2.56[mm]
+	
+	\noindent Niepewność u(h)=0.016[mm]
+	
+	\noindent Korzystając ze wzoru (1) wyznaczam wartość współczynnika załamania dla płytki z pleksiglasu:
+	
+	\[
+	    n=\frac{3.84}{2.56}=1.501
+	\]
+	
+	\subsection{Płytka szklana:}
+	Grubość rzeczywista d=3.76[mm]
+	
+	\noindent Niepewność u(d)=0.01[mm]
+	
+	\noindent Średnia grubość pozorna h=2.47[mm]
+	
+	\noindent Niepewność u(h)=0.020[mm]
+	
+	\noindent Korzystając ze wzoru (1) wyznaczam wartość współczynnika załamania dla płytki szklanej:
+	
+	\[
+	    n=\frac{3.76}{2.47}=1.520
+	\]
+	
+	\subsection{Płytka szklana z filtrem niebieskim:}
+	Grubość rzeczywista d=3.76[mm]
+	
+	\noindent Niepewność u(d)=0.01[mm]
+	
+	\noindent Średnia grubość pozorna h=2.51[mm]
+	
+	\noindent Niepewność u(h)=0.016[mm]
+	
+	\noindent Korzystając ze wzoru (1) wyznaczam wartość współczynnika załamania dla płytki szklanej:
+	
+	\[
+	    n=\frac{3.76}{2.51}=1.496
+	\]
+	
+	\subsection{Płytka szklana z filtrem zielonym:}
+	Grubość rzeczywista d=3.76[mm]
+	
+	\noindent Niepewność u(d)=0.01[mm]
+	
+	\noindent Średnia grubość pozorna h=2.49[mm]
+	
+	\noindent Niepewność u(h)=0.016[mm]
+	
+	\noindent Korzystając ze wzoru (1) wyznaczam wartość współczynnika załamania dla płytki szklanej:
+	
+	\[
+	    n=\frac{3.76}{2.49}=1.510
+	\]
+	
+	\subsection{Płytka szklana z filtrem czerwonym:}
+	Grubość rzeczywista d=3.76[mm]
+	
+	\noindent Niepewność u(d)=0.01[mm]
+	
+	\noindent Średnia grubość pozorna h=2.50[mm]
+	
+	\noindent Niepewność u(h)=0.018[mm]
+	
+	\noindent Korzystając ze wzoru (1) wyznaczam wartość współczynnika załamania dla płytki szklanej:
+	
+	\[
+	    n=\frac{3.76}{2.50}=1.502
+	\]
+	
+	\section{Obliczenie niepewności:}
+	
+	Wzór na niepewność złożoną współczynnika załamania:
+	\begin{equation}
+	    u(n)=\sqrt{\left[\frac{1}{h}u(d)\right]^{2}+\left[\frac{-d}{h^{2}}u(h)\right]^{2}}
+	\end{equation}
+
+	\begin{table}[!htb]
+	\centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+     & $u(d)$ & $u(h)$ & $u(n)$ \\ \hline
+     Pleksiglas                 & 0.01 & 0.016 & 0.011\\ \hline
+     Szkło                      & 0.01 & 0.020 & 0.013 \\ \hline
+     Szkło z filtrem niebieskim & 0.01 & 0.016 & 0.010 \\ \hline
+     Szkło z filtrem zielonym   & 0.01 & 0.016 & 0.011 \\ \hline
+     Szkło z filtrem czerwonym  & 0.01 & 0.018 & 0.012 \\ \hline
+
+    \end{tabular}
+        \caption{Tabela przed zaokrągleniem}
+    \end{table}
+
+    \section{Zestawienie wyników}
+    
+    \begin{table}[!htb]
+	\centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+     Materiał & n zmierzone & n tablicowe & $u(n)$ & $u(n)$ rozszerzone & Równe? \\ \hline
+     Pleksiglas & 1.501 & 1.489 & 0.011 & 0.022 & TAK    \\ \hline
+     Szkło                      & 1.520 & 1.500 & 0.013 & 0.026 & TAK\\ \hline
+     Szkło z filtrem niebieskim & 1.496 & 1.500 & 0.010 & 0.020 & TAK\\ \hline
+     Szkło z filtrem zielonym & 1.510 & 1.500 & 0.011 & 0.022 & TAK\\ \hline
+     Szkło z filtrem czerwonym & 1.502 & 1.500 & 0.012 & 0.024 & TAK\\ \hline
+
+
+    \end{tabular}
+        \caption{Zestawienie wyników}
+    \end{table}
+    
+    \section{Wnioski}
+    Z wykonanych obliczeń wynika, że metoda wyznaczania współczynnika załamania metodą pomiaru grubości pozornej płytki przy pomocy mikoskopu jest dobrym sposobem wyznaczania tej wartości, gdyż wszystkie obliczone wartości pokrywają się z wartościami tablicowymi w granicach niepewności rozszerzonej. Wykorzystanie kolorowych filtrów światła pokazało, że kolor światła nie wpływa na współczynnik załamania, nie można jednak stwierdzić tego z pewnością gdyż różnice pomiędzy pomiarami są zbyt małe. Niewielkie rozbieżności w wynikach mogą wynikać z subiektywności postrzegania obrazu za ostry. Nie można było dokładnie sprawdzić zgodności szkła z wartością tablicową gdyż nie można było stwierdzić rodzaju szkła więc przyjęta została wartość średnia dla tego materiału czyli $n=1.500$
+
+	
+\end{document}

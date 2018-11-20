@@ -1,0 +1,241 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{changepage}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{caption}
+
+\captionsetup[figure]{name=}
+
+
+\title{Sprawozdanie}
+\begin{document}
+	
+	\begin{center}
+		\bgroup
+		\def\arraystretch{1.5}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			EAIiIB & \multicolumn{2}{|c|}{\begin{tabular}{@{}c@{}}Autor 1: Rafał Mazur \\Autor 2: Jakub Ficoń\end{tabular}} & Rok II & Grupa 5 & Zespół 3 \\
+			\hline
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: \\ Wahadło fizyczne \end{tabular}} & 
+			\multicolumn{3}{|c|}{\begin{tabular}{c}Numer ćwiczenia: \\ 1 \end{tabular}} \\
+			\hline
+			Data wykonania & Data oddania & Zwrot do poprawki & Data oddania & Data zaliczenia & Ocena \\[8ex]
+			\hline
+		\end{tabular}
+		\egroup
+	\end{center}  
+	
+	%WSTEP
+	\section{Cel ćwiczenia}
+	Opis ruchu drgającego, a w szczegóności drgań wahadła fizycznego. Wyznaczenie momentów bezwładności brył sztywnych.
+	
+	\section{Wstęp teoretyczny}
+	    W załącznikach na końcu sprawozdania
+	
+	\section{Układ pomiarowy}
+	    \begin{enumerate}
+	        \item Statyw
+	        \item Badane btyły: pręt, pierścień
+	        \item Metalowy przymiar milimetrowy
+	        \item Suwmiarka
+	        \item Waga elektroniczna
+	        \item Sekundomierz
+	    \end{enumerate}
+	
+	\section{Wykonanie ćwiczenia}
+	\begin{enumerate}
+		\item Zmierzenie masy prętu i pierścienia.
+		\item Wyznaczanie rozmiarów pręta oraz pierścienia.
+		\item Umieszczenie pręta na statywie, wprowadzenie go w ruch drgający o amplitudzie nieprzekraczającej trzech stopni i zmierzenie czasu czterdziestu drgań. Pomiar powtórzyć dziesięciokrotnie.
+		\item Wykonanie punktu 3 dla pierścienia.
+	\end{enumerate}
+		\newpage
+	\section{Opracowanie wyników pomiaru}
+	
+	\subsection{Obliczenie momentu bezwładności $I_{0}$ względem rzeczywistej osi obrotu:}
+	Korzystam ze wzoru:
+	\[
+	    I_{0}=\frac{mgaT^{2}}{4\pi^{2}}
+	\]
+	Obliczam moment bezwładności $I_{0}$ dla pręta i pierścienia:
+	\[
+	    I_{0_{pret}}=0.08057    [kg\cdot m^2]
+	\]
+	\[
+	    I_{0_{pierscien}}=0.04483   [kg\cdot m^2]
+	\]
+	
+	\subsection{Obliczenie momentu bezwładności $I_{S}$ względem osi przechodzącej przez środek masy korzystając z twierdzenia Steinera:} 
+    Korzystam ze wzoru:
+	\[
+	    I_{S}=I_{0}-ma^{2}
+	\]
+	Obliczam moment bezwładności $I_{S}$ dla pręta i pierścienia:
+	\[
+	    I_{S_{pret}}=0.03043    [kg\cdot m^2]
+	\]
+	\[
+	    I_{S_{pierscien}}=0.02393   [kg\cdot m^2]
+	\]
+	
+	\subsection{Obliczenie momentu bezwładności względem osi przechodzącej przez środek masy $I_{S}^{(geom)}$ na podstawie masy i wymiarów geometrycznych:}
+	Korzystam ze wzoru dla pręta:
+	\[
+	    I_{S_{pret}}^{(geom)}=\frac{1}{12}ml^2
+	\]
+	Obliczam moment bezwładności $I_{S}^{(geom)}$ dla pręta:
+	\[
+	    I_{S_{pret}}^{(geom)}=0.03099   [kg\cdot m^2]
+	\]
+	Korzystam ze wzoru dla pierścienia (wydrążony walec):
+	\[
+	    I_{S_{pierscien}}^{(geom)}=\frac{1}{2}m(R^2+r^2)
+	\]
+	Obliczam moment bezwładności $I_{S}^{(geom)}$ dla pierscienia:
+	\[
+	    I_{S_{pierscien}}^{(geom)}= 0.02486 [kg\cdot m^2]
+	\]\pagebreak
+	\subsection{Obliczenie lub przyjęcie nieprwności wielkości mierzonych(okresu, masy, wymiarów geometrycznych):}
+	Niepewność okresu pręta (typu A):
+	\[
+	    u(T)= \sqrt{\frac{\sum(T_i-\bar{T})^2}{n(n-1)}}=0.00046[s]
+	\]
+	Niepewność okresu pierścienia (typu A):
+	\[
+	    u(T)= \sqrt{\frac{\sum(T_i-\bar{T})^2}{n(n-1)}}=0.00108[s]
+	\]
+	Niepewność masy pręta i pierścienia (typu B):
+	\[
+	    u(m)=1[g]=0.001[kg]
+	\]
+	Niepewności wymiarów geometrycznych:
+	\[
+	    u(l)=1[mm]=0.001[m]
+    \]
+	\[
+	    u(a_{preta})=0.5[mm]=0.0005[m]
+	\]
+	\[
+	    u(a_{pierscienia})=0.05[mm]=0.00005[m]
+	\]
+	\subsection{Obliczenie niepewności złożonej momentu bezwładności $I_{0}$ oraz $I_{S}$:}
+	Dla pręta:
+	
+	Dla $I_{0}$ korzystam z prawa przenoszenia niepewności względnych:
+	\[
+	    \frac{u(I_{0})}{I_{0}}=\sqrt{\left[\frac{u(m)}{m}\right]^{2}+\left[\frac{u(a)}{a}\right]^{2}+\left[2\frac{u(T_{0})}{T_{0}}\right]^{2}} = \sqrt{\left[\frac{0.001)}{0.663}\right]^{2}+\left[\frac{0.005}{0.275}\right]^{2}+\left[2\cdot\frac{0.00046}{1.33195}\right]^{2}}= 0.00246
+	\]
+	\[
+	    u(I_{0})=I_{0}\cdot 0.00246=0.00020
+	\]
+	
+	Dla $I_{S}$ korzystam z prawa przenoszenia niepewności:
+	\[
+	    u(I_{S})=\sqrt{\left[\frac{\partial{}I_{S}}{\partial{}I_{0}}u(I_{0})\right]^{2}+\left[\frac{\partial{}I_{S}}{\partial{}m}u(m)\right]^{2}+\left[\frac{\partial{}I_{S}}{\partial{}a}u(a)\right]^{2}} = \sqrt{\left[u(I_{0})\right]^2+\left[a^{2}\cdot u(m)\right]^2+\left[2am\cdot u(a)\right]^2}= 0.00028
+	\]
+	Dla pierścienia:
+	
+	Dla $I_{0}$ korzystam z prawa przenoszenia niepewności względnych:
+	\[
+	    \frac{u(I_{0})}{I_{0}}=\sqrt{\left[\frac{u(m)}{m}\right]^{2}+\left[\frac{u(a)}{a}\right]^{2}+\left[2\frac{u(T_{0})}{T_{0}}\right]^{2}}=
+	    \sqrt{\left[\frac{0.001)}{1.343}\right]^{2}+\left[\frac{0.0005}{0.1277}\right]^{2}+\left[2\cdot\frac{0.00108}{1.02443}\right]^{2}}= 0.00227
+	\]
+	\[
+	    u(I_{0})=I_{0}\cdot 0.04483=0.00010
+	\]
+	
+	Dla $I_{S}$ korzystam z prawa przenoszenia niepewności:
+	\[
+	    u(I_{S})=\sqrt{\left[\frac{\partial{}I_{S}}{\partial{}I_{0}}u(I_{0})\right]^{2}+\left[\frac{\partial{}I_{S}}{\partial{}m}u(m)\right]^{2}+\left[\frac{\partial{}I_{S}}{\partial{}a}u(a)\right]^{2}} = \sqrt{\left[u(I_{0})\right]^2+\left[a^{2}\cdot u(m)\right]^2+\left[2am\cdot u(a)\right]^2}= 0.00010
+	\]
+	\pagebreak
+	
+	\subsection{Obliczenie niepewności $u(I_{S}^{(geom)})$:}
+	Z prawa przenoszenia niepewności względnych (dla pręta):
+	\[
+	    \frac{u(I_{S}^{(geom)})}{I_{S}^{(geom)}}=\sqrt{\left[\frac{u(m)}{m}\right]^{2}+\left[2\frac{u(l)}{l}\right]^{2}} = \sqrt{\left[\frac{0.001}{0.663}\right]^{2}+\left[2\cdot\frac{0.001}{0.749}\right]^{2}} = 0.00307
+	\]
+	\[
+	    u(I_{S}^{(geom)})=I_{S}^{(geom)}\cdot 0.03099=0.00010
+	\]
+	Z prawa przenoszenia niepewności (dla pierścienia):
+	\begin{equation}
+    \begin{split}
+	    u(I_{S}^{(geom)})&=\sqrt{\left[\frac{\partial{}I_{S}^{(geom)}}{\partial{}m}u(m)\right]^{2}+\left[\frac{\partial{}I_{S}^{(geom)}}{\partial{}R}u(R)\right]^{2}+\left[\frac{\partial{}I_{S}^{(geom)}}{\partial{}r}u(r)\right]^{2}} =\\&= \sqrt{\frac{1}{4}\cdot((R^{2}+r^{2})\cdot u(m))^{2}+(2mR\cdot u(R))^{2}+(2mr\cdot u(r))^{2}}= 0.00007 
+    \end{split}
+	\end{equation}
+
+    \subsection{Porównanie metod:}
+    Dla pręta:
+    
+                $u(I_{S})=0.00028$
+                
+        	    $u(I_{S}^{(geom)})=0.00010$
+        	    
+        	    $u(I_{S}) > u(I_{S}^{(geom)})$
+    
+    \noindent Dla pierścienia:
+    
+                $u(I_{S})=0.00010$
+                
+        	    $u(I_{S}^{(geom)})=0.00007$
+        	    
+        	    $u(I_{S}) > u(I_{S}^{(geom)})$
+        	    
+    \noindent Wynika z tego że metoda geometryczna jest bardziej dokładna, wynikać to może z tego, że do druga metoda wymagała większej ilości pomiarów co mogło spowodować większą ilość błędów.
+        	    
+    \subsection{Sprawdzenie czy wyniki są zgodne w granicach niepewności rozszerzonej:}
+    Obliczam stosunek (wyniki uważam za zgodne gdy stosunek ten ma wartość mniejszą od k=2):
+    \[
+        k=\frac{\left|I_{S}-I_{S}^{(geom)}\right|}{\sqrt{u^{2}(I_{S})+u^{2}(I_{S}^{(geom)})}}
+    \]
+    
+    Dla pręta k = 1.9, więc wyniki można uznać za zgodne.
+    
+    Dla pierścienia k = 1.82, więc wyników nie można uznać za zgodne.
+    \pagebreak
+    \section{Stableryzowane wyniki:}
+    \subsection{Wyniki obliczeń dla pręta:}
+    
+	\begin{table}[!htb]
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+                & $I_{0}^{[1]}[kg\cdot m^2]$ & $I_{S}^{[2]}[kg\cdot m^2]$  & $I_{S}^{(geom)[3]}[kg\cdot m^2]$  \\ \hline
+            Wartość & 0.08057 & 0.03043 & 0.03099 \\ \hline
+            Niepewność & 0.00020 & 0.00028 & 0.00010 \\ \hline
+        \end{tabular}
+    \end{table}
+    
+    \subsection{Wyniki obliczeń dla pierścienia:}
+    
+    \begin{table}[!htb]
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+                & $I_{0}^{[1]}[kg\cdot m^2]$ & $I_{S}^{[2]}[kg\cdot m^2]$  & $I_{S}^{(geom)[3]}[kg\cdot m^2]$  \\ \hline
+            Wartość & 0.04483 & 0.02463 & 0.024857 \\ \hline
+            Niepewność & 0.00010 & 0.00010 & 0.00007 \\ \hline
+        \end{tabular}
+    \end{table}
+    
+    \noindent[1] -- wyznaczone z okresu drgań,
+    
+    \noindent[2] -- wyznaczone z twierdzenia Steinera,
+    
+    \noindent[3] -- wyznaczone z pomiarów geometrycznych
+    
+\section{Wnioski}
+    W obu przypadkach korzystanie z metody geometrycznej wykazuje większą dokładność a więc wartości uzyskane w tej metodzie są pewniejsze od wartości doświadczalnych. Wartości momentu bezwładności dla pręta i pierścienia mieszczą się w niepewności rozszerzonej. Większy błąd dla metody doświadczalnej może wynikać z tego, że wymaga ona większej liczby danych a to powoduje wzrost wartości błędu, oraz z występowania tłumienia drgań w powietrzu (co można wyeliminować przez zwiększenie liczby mierzonych okresów przy pomiarze). 
+
+\end{document}
